@@ -17,7 +17,7 @@ redirect_from:
 
 ## 1. 깃헙 블로그 드디어 시작!
 
-<img src="/images/2024-07-20-first-posting/llama-mascot-logo_83738-665.jpg" style="zoom:50%;" />
+<img src="/images/2024-07-20-first-posting/llama-mascot-logo_83738-665.jpg" style="zoom:50%;" />{: .align-center}
 
 ```python
 
