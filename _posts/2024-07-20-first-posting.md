@@ -5,6 +5,10 @@ categories: coding
 tag: [python, blog, jekyll]
 toc: true
 Typora-root-url: ../
+author_profile: true
+# sidebar:
+#   nav: "docs"
+search: true
 ---
 
 # Test
