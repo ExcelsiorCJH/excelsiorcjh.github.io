@@ -11,6 +11,7 @@ search: true
 redirect_from:
   - /coding/first-posting
   - /coding1
+use_math: true
 ---
 
 # Test
@@ -44,3 +45,11 @@ print('Hello, GitHub Blog!!!')
 ## 3. Youtube Link
 
 {% include video id="--MMmHbSH9k" provider="youtube" %}
+
+## 4. Latex 수식
+
+$y$는 종속변수 $x$는 독립변수 $b$는 절편
+
+$y = ax + b$
+
+$$ y = ax + b $$
