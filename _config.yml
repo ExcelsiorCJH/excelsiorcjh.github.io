@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name: "ExcelsiorCJH"
-  avatar: "/assets/images/bio-phto.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "AI & 재테크 관련 글들을 포스팅"
   location: "Korea/Seoul"
   email:
@@ -313,5 +313,9 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fa-solid fa-bars-staggered"
 
 date_format: "%Y-%m-%d"
