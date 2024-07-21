@@ -4,9 +4,9 @@ title: 첫 번째 포스팅입니다!
 categories: code
 tag: [python, blog, jekyll]
 Typora-root-url: ../
-author_profile: true
-# sidebar:
-#   nav: "docs"
+author_profile: false
+sidebar:
+  nav: "counts"
 search: true
 redirect_from:
   - /coding/first-posting
