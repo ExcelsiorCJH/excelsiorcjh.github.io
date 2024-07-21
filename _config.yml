@@ -114,7 +114,7 @@ analytics:
 author:
   name: "ExcelsiorCJH"
   avatar: "/assets/images/bio-phto.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "AI & 재테크 관련 글들을 포스팅하는 블로그입니다."
+  bio: "AI & 재테크 관련 글들을 포스팅합니다."
   location: "Korea/Seoul"
   email:
   links:
@@ -281,16 +281,16 @@ tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive-taxonomy
+    tag: archive-taxonomy
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/
 
 # HTML Compression
 # - https://jch.penibelst.de/

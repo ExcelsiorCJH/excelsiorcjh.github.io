@@ -1,6 +1,8 @@
 ---
 layout: single
 title: 첫 번째 포스팅입니다!
+categories: coding
+tag: [python, blog, jekyll]
 ---
 
 # Test
