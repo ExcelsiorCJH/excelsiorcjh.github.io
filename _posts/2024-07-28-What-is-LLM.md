@@ -22,7 +22,7 @@ use_math: true
 - 대표적으로 $n$-gram LM이 있으며, 예측에 사용할 앞 단어들의 개수를 정하여 모델링 하는 방법
 - SLM의 단점은 $n$-gram 설정에 따라 차원이 커지는 문제(curse of dimensionality)가 발생하고, 모델의 크기가 매우 커져 단어에 대한 확률을 추정하기가 어렵다는 단점이 있음
 
-<img src="/images/2024-07-28-What-is-LLM/n-gram.png" alt="$n$-gram LM" style="zoom:75%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/n-gram.png" alt="$n$-gram LM" style="zoom:50%;" />{: .align-center}
 
 ### 1.2 **_Neural Language Model(NLM)_**
 
@@ -42,7 +42,7 @@ use_math: true
 - **_텍스트 전처리_**: BPE(Byte-Pair Encoding)와 SP(Sentence-Piece) 등을 사용하여, 각 언어별로 필요했던 Tokenizer(e.g Mecab, NLTK 등)가 더이상 필요하지 않게됨
 - **_학습 방법_**: MLM(Masked Language Model), NSP(Next Sentence Prediction) 등을 이용한 Pre-training과 특정 태스크에 대해 Fine-Tuning으로 이루어짐
 
-<img src="/images/2024-07-28-What-is-LLM/plm2.png" alt="PLM 학습 방법" style="zoom:67%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/plm2.png" alt="PLM 학습 방법" style="zoom:50%;" />{: .align-center}
 
 ### 1.4 _Large Language Model(LLM)_
 
@@ -54,7 +54,7 @@ use_math: true
 - 따라서, Emergent Ability가 LLM과 기존 PLM을 구별하는 가장 큰 특징이라고 할 수 있음
 - 2019년 T5를 시작으로, 2020년 GPT-3, 2021년 HyperCLOVA, 2022년 ChatGPT, 2023년 LLaMA 등 다양한 LLM이 쏟아져 나오고 있는 상황
 
-<img src="/images/2024-07-28-What-is-LLM/llm-map.png" alt="LLMs" style="zoom:75%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/llm-map.png" alt="LLMs" style="zoom:50%;" />{: .align-center}
 
 ## 2. Backgroud for LLMs
 
@@ -129,7 +129,7 @@ use_math: true
 - In-context learning은 프롬프트 엔지니어링(Prompt engineering)이라는 기술을 통해 이루어 지며, 프롬프트 내 맥락(in-context)을 LLM이 이해(learning)하고, 적절한 답을 생성하는 것을 말함
 - In-context learning은 프롬프트에 몇 개의 예시를 주느냐에 따라 Zero-shot, One-shot, Few-shot으로 나눌 수 있음
 
-<img src="/images/2024-07-28-What-is-LLM/in-context.png" alt="in-context learning" style="zoom:75%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/in-context.png" alt="in-context learning" style="zoom:50%;" />{: .align-center}
 
 ### 3.2 _Prompting_: Chain-of-Thought Prompting
 
@@ -143,9 +143,9 @@ use_math: true
   - symbolic reasoning
 - CoT Prompting 방법은 중간 추론 단계(intermediate reasoning step)를 프롬프트에 추가함으로써 LLM이 문제에 대한 답을 도출할 수 있도록 prompting하는 것을 말함
 
-<img src="/images/2024-07-28-What-is-LLM/cot.png" alt="CoT Prompting" style="zoom:75%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/cot.png" alt="CoT Prompting" style="zoom:60%;" />{: .align-center}
 
-<img src="/images/2024-07-28-What-is-LLM/cot2.png" alt="CoT Prompting" style="zoom:75%;" />{: .align-center}
+<img src="/images/2024-07-28-What-is-LLM/cot2.png" alt="CoT Prompting" style="zoom:60%;" />{: .align-center}
 
 ### 3.3 Fine-Tuning: _Instruction Tuning_
 
@@ -153,11 +153,11 @@ use_math: true
 - 3.1에서 살펴본 GPT-3(Language Models are zero-shot Learners, [link](https://arxiv.org/pdf/2005.14165.pdf))에서 소개한 In-context Learning과 FLAN의 차이점은 **Fine-tuning**에 있음
 - FLAN에서 제안한 Instruction Tuning은 다양한 NLP 태스크에 대해 Natural Language Instructions(태스크에 대한 명령 또는 지침)의 헝태로 변형해서 LLM을 fine-tuning 하는 것임
 
-![FLAN - Instruction Tuning](/images/2024-07-28-What-is-LLM/flan.png)
+<img src="/images/2024-07-28-What-is-LLM/flan.png" alt="FLAN - Instruction Tuning" style="zoom:67%;" />{: .align-center}
 
 - FLAN은 PLM에 대해, 다양한 NLP 태스크들을 수행할 수 있도록 다음과 같은 형태로 Instruction tuning을 진행함
 
-![FLAN - instruction tuning](/images/2024-07-28-What-is-LLM/flan2.png)
+<img src="/images/2024-07-28-What-is-LLM/flan2.png" alt="FLAN - instruction tuning" style="zoom:67%;" />{: .align-center}
 
 ### 3.4 Fine-Tuning: _RLHF_
 
@@ -182,14 +182,14 @@ use_math: true
   - RLHF를 하기에 어떤 모델이 가장 좋은지에 대해서는 알려진 바가 없음
   - RLHF 학습에 사용하는 옵션들에 대한 design space는 아직 충분히 연구되지 않았기 때문
 
-  <img src="/images/2024-07-28-What-is-LLM/rlhf1.png" alt="RLHF: Pre-training" style="zoom:67%;" />{: .align-center}
+  <img src="/images/2024-07-28-What-is-LLM/rlhf1.png" alt="RLHF: Pre-training" style="zoom:30%;" />{: .align-center}
 
 - **_Step 2: Reward Model Training_**
 
   - Step 1에서 학습된 LM이 생성한 텍스트에 대해, 사람이 직접 점수를 매김 → Human scoring
   - 이렇게 만들어진, {텍스트, 리워드} pair를 사용하여 Reward 모델을 학습시킴
 
-  <img src="/images/2024-07-28-What-is-LLM/rlhf2.png" alt="RLHF: Reward model training" style="zoom:67%;" />{: .align-center}
+  <img src="/images/2024-07-28-What-is-LLM/rlhf2.png" alt="RLHF: Reward model training" style="zoom:30%;" />{: .align-center}
 
 - **_Step 3: Fine-tuning with RL_**
 
@@ -200,7 +200,7 @@ use_math: true
     - KL-digence를 통해 강화학습 정책(Policy)이 초기 LM에서 너무 벗어나는 것을 방지함
     - 이를 통해, LM이 일관성 있는 텍스트를 생성하도록 강제할 수 있음
 
-  <img src="/images/2024-07-28-What-is-LLM/rlhf3.png" alt="RLHF: fine-tuning" style="zoom:67%;" />{: .align-center}
+  <img src="/images/2024-07-28-What-is-LLM/rlhf3.png" alt="RLHF: fine-tuning" style="zoom:30%;" />{: .align-center}
 
 ## 4. 참고 자료
 
