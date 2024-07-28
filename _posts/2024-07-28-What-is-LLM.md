@@ -36,7 +36,7 @@ use_math: true
 
 - biLSTM 기반인 ELMo를 시작으로 Transformer 기반의 BERT, GPT 등 다양한 PLM들이 등장하기 시작함
 
-![Untitled](/images/2024-07-28-What-is-LLM/plm.png)
+<img src="/images/2024-07-28-What-is-LLM/plm.png" alt="PLM" style="zoom:67%;" />{: .align-center}
 
 - 이 시기부터, Language Modeling의 패러다임이 바뀌었다고 해도 과언이 아닐 정도로 텍스트 데이터 전처리부터 시작하여 학습 방법 그리고 모델링 등 많은 것들이 바뀜
 - **_텍스트 전처리_**: BPE(Byte-Pair Encoding)와 SP(Sentence-Piece) 등을 사용하여, 각 언어별로 필요했던 Tokenizer(e.g Mecab, NLTK 등)가 더이상 필요하지 않게됨
